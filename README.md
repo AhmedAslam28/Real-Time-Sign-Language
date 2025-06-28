@@ -1,4 +1,3 @@
-
 # Indian Sign Language System
 
 A comprehensive sign language recognition and generation system built with Python, TensorFlow, and Streamlit.
@@ -38,6 +37,9 @@ sign_language_system/
 ├── main.py                          # Main application entry point
 ├── requirements.txt                 # Project dependencies
 ├── README.md                        # Project documentation
+├── Dockerfile                       # Docker configuration
+├── docker-compose.yml               # Docker Compose configuration
+├── .dockerignore                    # Docker ignore file
 ├── config/
 │   ├── __init__.py
 │   ├── settings.py                  # Configuration constants
@@ -74,17 +76,63 @@ sign_language_system/
 
 ## Installation
 
+### Option 1: Local Installation
+
 1. Clone the repository or download the files
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
+### Option 2: Docker Installation (Recommended)
+
+Docker provides a consistent environment and easier setup process, especially for managing system dependencies and ensuring reproducibility across different platforms.
+
+#### Prerequisites
+- Docker installed on your system
+- Docker Compose (usually included with Docker Desktop)
+
+#### Quick Start with Docker
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd sign_language_system
+   ```
+
+2. Build and run with Docker Compose:
+   ```bash
+   docker-compose up --build
+   ```
+
+3. Access the application at `http://localhost:8501`
+
+#### Alternative Docker Commands
+```bash
+# Build the Docker image
+docker build -t sign-language-app .
+
+# Run the container
+docker run -p 8501:8501 -v $(pwd)/models:/app/models --device=/dev/video0:/dev/video0 sign-language-app
+```
+
+#### Docker Notes
+- The application runs in a containerized environment with all dependencies pre-installed
+- Models, training data, and logs are persisted using Docker volumes
+- Camera access is configured for Linux/Mac systems
+- For Windows users, camera access may require additional Docker configuration
+
 ## Usage
 
 1. Start the application:
+   
+   **Local:**
    ```bash
    streamlit run main.py
+   ```
+   
+   **Docker:**
+   ```bash
+   docker-compose up
    ```
 
 2. Open your web browser and navigate to the displayed URL (usually `http://localhost:8501`)
@@ -102,9 +150,16 @@ Currently supports the following sign categories:
 
 ## Requirements
 
+### Local Installation
 - Python 3.8 or higher
 - Webcam for sign recognition and data collection
 - Microphone for speech input (optional)
+- Minimum 4GB RAM recommended
+- GPU support optional but recommended for training
+
+### Docker Installation
+- Docker and Docker Compose
+- Webcam for sign recognition and data collection
 - Minimum 4GB RAM recommended
 - GPU support optional but recommended for training
 
@@ -136,7 +191,8 @@ Place sign language videos in `assets/sign_vd/` directory following the naming c
 ## Troubleshooting
 
 ### Camera Issues
-- Ensure webcam is connected and not used by other applications
+- **Local**: Ensure webcam is connected and not used by other applications
+- **Docker**: Verify camera device mapping in docker-compose.yml
 - Try changing camera index in OpenCV capture initialization
 
 ### Model Loading Errors
@@ -147,17 +203,18 @@ Place sign language videos in `assets/sign_vd/` directory following the naming c
 - Install PyAudio: `pip install pyaudio`
 - Check microphone permissions in your browser/system
 
+### Docker Issues
+- **Camera not working**: Ensure proper device mapping for your OS
+- **Permission errors**: Run Docker with appropriate privileges
+- **Build failures**: Check system dependencies and Docker version
+
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes following the modular structure
-4. Test thoroughly
+4. Test thoroughly (both locally and with Docker)
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 
