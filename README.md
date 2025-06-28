@@ -1,18 +1,41 @@
+<p align="center">
+  <!-- Core Technologies -->
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python" alt="Python">
+  </a>
+  <a href="https://streamlit.io/">
+    <img src="https://img.shields.io/badge/Streamlit-Enabled-ff4b4b?logo=streamlit" alt="Streamlit">
+  </a>
+  <a href="https://www.tensorflow.org/">
+    <img src="https://img.shields.io/badge/TensorFlow-Used-orange?logo=tensorflow" alt="TensorFlow">
+  </a>
+  <a href="https://opencv.org/">
+    <img src="https://img.shields.io/badge/OpenCV-Used-green?logo=opencv" alt="OpenCV">
+  </a>
+  <a href="https://developers.google.com/mediapipe">
+    <img src="https://img.shields.io/badge/MediaPipe-Hands%20%26%20Pose-ff6600?logo=google" alt="MediaPipe">
+  </a>
+  <a href="https://scikit-learn.org/">
+    <img src="https://img.shields.io/badge/scikit--learn-Used-F7931E?logo=scikit-learn" alt="scikit-learn">
+  </a>
+  <br>
+  <!-- Services -->
+  <a href="https://huggingface.co/">
+    <img src="https://img.shields.io/badge/HuggingFace-Models-yellow?logo=huggingface" alt="Hugging Face">
+  </a>
+  <a href="https://www.elevenlabs.io/">
+    <img src="https://img.shields.io/badge/ElevenLabs-TTS-ffcc00" alt="ElevenLabs">
+  </a>
+  <a href="https://www.reallusion.com/iclone/">
+    <img src="https://img.shields.io/badge/iClone-Animation%20Tool-5c5c5c" alt="iClone">
+  </a>
+  <br>
+  <!-- Deployment -->
+  <a href="https://www.docker.com/">
+    <img src="https://img.shields.io/badge/Docker-Supported-blue?logo=docker" alt="Docker">
+  </a>
+</p>
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Enabled-ff4b4b?logo=streamlit)](https://streamlit.io/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-Used-orange?logo=tensorflow)](https://www.tensorflow.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-Used-green?logo=opencv)](https://opencv.org/)
-[![MediaPipe](https://img.shields.io/badge/MediaPipe-Hands%20%26%20Pose-ff6600?logo=google)](https://developers.google.com/mediapipe)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-Used-F7931E?logo=scikit-learn)](https://scikit-learn.org/)
-
-<!-- Services -->
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-Models-yellow?logo=huggingface)](https://huggingface.co/)
-[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-TTS-ffcc00)](https://www.elevenlabs.io/)
-[![iClone](https://img.shields.io/badge/iClone-Animation%20Tool-5c5c5c)](https://www.reallusion.com/iclone/)
-
-<!-- Deployment -->
-[![Docker](https://img.shields.io/badge/Docker-Supported-blue?logo=docker)](https://www.docker.com/)
 
 # Indian Sign Language System
 
