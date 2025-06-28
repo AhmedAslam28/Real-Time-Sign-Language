@@ -310,7 +310,6 @@ Place sign language videos in `assets/sign_vd/` directory following the naming c
 
 ## Citation
 
-If you use this work in your research, please cite:
 
 ```bibtex
 @inproceedings{aslam2025isl,
