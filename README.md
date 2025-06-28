@@ -311,12 +311,3 @@ Place sign language videos in `assets/sign_vd/` directory following the naming c
 ## Citation
 
 
-```bibtex
-@inproceedings{aslam2025isl,
-  title={Real-Time Indian Sign Language Recognition \& Multilingual Sign Generation},
-  author={Ahmed Aslam M},
-  booktitle={3rd International Conference on Augmented Intelligence and Sustainable Systems (ICAISS-2025)},
-  year={2025},
-  organization={CARE College of Engineering, Trichy, Tamil Nadu, India}
-}
-```
