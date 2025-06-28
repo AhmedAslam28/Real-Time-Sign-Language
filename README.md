@@ -39,7 +39,7 @@
 # Indian Sign Language System
 
 <p align="center">
-  <img src="assets/images/isl_overview.png" alt="Indian Sign Language Overview" width="800">
+  <img src="assets/ISL-Title.png" alt="Indian Sign Language Overview" width="800">
 </p>
 
 A comprehensive sign language recognition and generation system built with Python, TensorFlow, and Streamlit.
