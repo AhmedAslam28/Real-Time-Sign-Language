@@ -308,6 +308,6 @@ Place sign language videos in `assets/sign_vd/` directory following the naming c
 - Streamlit for the web interface
 - OpenCV for computer vision processing
 
-## Citation
+
 
 
