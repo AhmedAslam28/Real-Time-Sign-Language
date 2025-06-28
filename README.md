@@ -36,10 +36,36 @@
   </a>
 </p>
 
-
 # Indian Sign Language System
 
+<p align="center">
+  <img src="assets/images/isl_overview.png" alt="Indian Sign Language Overview" width="800">
+</p>
+
 A comprehensive sign language recognition and generation system built with Python, TensorFlow, and Streamlit.
+
+## Architecture
+
+<p align="center">
+  <img src="assets/images/system_architecture.png" alt="System Architecture" width="900">
+</p>
+
+The system architecture consists of three main processing pipelines:
+
+### 1. Preprocessing Pipeline
+- **MediaPipe Processing**: Hand and pose landmark detection using MediaPipe
+- **Audio Processing**: Speech-to-text conversion using Google Speech API
+- **Text Processing**: Language detection and translation capabilities
+
+### 2. AI-Assisted Recognition Pipeline
+- **Dense Layer Processing**: Multi-layer LSTM network with softmax classification
+- **Model Training**: Continuous learning from gesture datasets
+- **Feedback System**: Real-time model updates and weight adjustments
+
+### 3. Text-to-Sign Translation Pipeline
+- **HF Cross Generation**: Hugging Face model integration for cross-modal generation
+- **3D Avatar/Video Mapping**: Sign video animations and 3D avatar generation
+- **Output Interfaces**: Multiple output formats including text, audio, and visual
 
 ## Features
 
@@ -68,6 +94,23 @@ A comprehensive sign language recognition and generation system built with Pytho
 - Compare different model architectures
 - Performance analysis and visualization
 - Automated model selection
+
+## Publications
+
+### Conference Paper
+**Title**: Real-Time Indian Sign Language Recognition & Multilingual Sign Generation
+
+**Authors**: Ahmed Aslam M
+
+**Conference**: 3rd International Conference on Augmented Intelligence and Sustainable Systems (ICAISS-2025)
+
+**Venue**: CARE College of Engineering, Trichy, Tamil Nadu, India
+
+**Date**: May 21-23, 2025
+
+**Certificate**: IEEE Certificate of Presentation awarded
+
+**Abstract**: This research presents a comprehensive system for real-time Indian Sign Language (ISL) recognition and multilingual sign generation, leveraging advanced machine learning techniques including LSTM networks, MediaPipe for gesture detection, and cross-modal generation models for bidirectional communication between sign language and text/speech.
 
 ## Project Structure
 
@@ -107,6 +150,7 @@ sign_language_system/
 │   └── session_utils.py             # Session state management
 ├── models/                          # ML model files (created automatically)
 ├── assets/
+│   ├── images/                      # Project images and diagrams
 │   └── sign_vd/                     # Sign language video files
 ├── MP_Data/                         # Training data (created automatically)
 ├── Logs/                            # Training logs (created automatically)
@@ -261,3 +305,17 @@ Place sign language videos in `assets/sign_vd/` directory following the naming c
 - TensorFlow for deep learning capabilities
 - Streamlit for the web interface
 - OpenCV for computer vision processing
+
+## Citation
+
+If you use this work in your research, please cite:
+
+```bibtex
+@inproceedings{aslam2025isl,
+  title={Real-Time Indian Sign Language Recognition \& Multilingual Sign Generation},
+  author={Ahmed Aslam M},
+  booktitle={3rd International Conference on Augmented Intelligence and Sustainable Systems (ICAISS-2025)},
+  year={2025},
+  organization={CARE College of Engineering, Trichy, Tamil Nadu, India}
+}
+```
