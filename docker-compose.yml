@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  sign-language-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount directories for persistent data
+      - ./models:/app/models
+      - ./MP_Data:/app/MP_Data
+      - ./Logs:/app/Logs
+      - ./Results:/app/Results
+      # Mount for webcam access (Linux/Mac)
+      - /dev/video0:/dev/video0
+    devices:
+      # Camera access
+      - /dev/video0:/dev/video0
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+      - STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=false
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
