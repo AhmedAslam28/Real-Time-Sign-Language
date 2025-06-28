@@ -2,7 +2,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![Docker](https://img.shields.io/badge/Docker-Supported-blue?logo=docker)
 ![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-red?logo=streamlit)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
 
 # Indian Sign Language System
