@@ -47,7 +47,7 @@ A comprehensive sign language recognition and generation system built with Pytho
 ## Architecture
 
 <p align="center">
-  <img src="assets/images/system_architecture.png" alt="System Architecture" width="900">
+  <img src="assets/Architecture-Flow-Diagram.png" alt="System Architecture" width="900">
 </p>
 
 The system architecture consists of three main processing pipelines:
