@@ -117,7 +117,7 @@ The system architecture consists of three main processing pipelines:
 ## Project Structure
 
 ```
-sign_language_system/
+Real-Time-Sign-Language-master/
 ├── main.py                          # Main application entry point
 ├── requirements.txt                 # Project dependencies
 ├── README.md                        # Project documentation
@@ -181,7 +181,7 @@ Docker provides a consistent environment and easier setup process, especially fo
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd sign_language_system
+   cd Real-Time-Sign-Language-master
    ```
 
 2. Build and run with Docker Compose:
