@@ -102,7 +102,7 @@ The system architecture consists of three main processing pipelines:
 ### Conference Paper
 **Title**: Real-Time Indian Sign Language Recognition & Multilingual Sign Generation
 
-**Authors**: Ahmed Aslam M
+**Authors**: Ahmed Aslam M , Mohamed Aabidh A
 
 **Conference**: 3rd International Conference on Augmented Intelligence and Sustainable Systems (ICAISS-2025)
 
