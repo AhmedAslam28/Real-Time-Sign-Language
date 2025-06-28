@@ -44,29 +44,6 @@
 
 A comprehensive sign language recognition and generation system built with Python, TensorFlow, and Streamlit.
 
-## Architecture
-
-<p align="center">
-  <img src="assets/Architecture-Flow-Diagram.png" alt="System Architecture" width="900">
-</p>
-
-The system architecture consists of three main processing pipelines:
-
-### 1. Preprocessing Pipeline
-- **MediaPipe Processing**: Hand and pose landmark detection using MediaPipe
-- **Audio Processing**: Speech-to-text conversion using Google Speech API
-- **Text Processing**: Language detection and translation capabilities
-
-### 2. AI-Assisted Recognition Pipeline
-- **Dense Layer Processing**: Multi-layer LSTM network with softmax classification
-- **Model Training**: Continuous learning from gesture datasets
-- **Feedback System**: Real-time model updates and weight adjustments
-
-### 3. Text-to-Sign Translation Pipeline
-- **HF Cross Generation**: Hugging Face model integration for cross-modal generation
-- **3D Avatar/Video Mapping**: Sign video animations and 3D avatar generation
-- **Output Interfaces**: Multiple output formats including text, audio, and visual
-
 ## Features
 
 ### 🖐️ Sign Recognition
@@ -94,6 +71,29 @@ The system architecture consists of three main processing pipelines:
 - Compare different model architectures
 - Performance analysis and visualization
 - Automated model selection
+
+## Architecture
+
+<p align="center">
+  <img src="assets/Architecture-Flow-Diagram.png" alt="System Architecture" width="900">
+</p>
+
+The system architecture consists of three main processing pipelines:
+
+### 1. Preprocessing Pipeline
+- **MediaPipe Processing**: Hand and pose landmark detection using MediaPipe
+- **Audio Processing**: Speech-to-text conversion using Google Speech API
+- **Text Processing**: Language detection and translation capabilities
+
+### 2. AI-Assisted Recognition Pipeline
+- **Dense Layer Processing**: Multi-layer LSTM network with softmax classification
+- **Model Training**: Continuous learning from gesture datasets
+- **Feedback System**: Real-time model updates and weight adjustments
+
+### 3. Text-to-Sign Translation Pipeline
+- **HF Cross Generation**: Hugging Face model integration for cross-modal generation
+- **3D Avatar/Video Mapping**: Sign video animations and 3D avatar generation
+- **Output Interfaces**: Multiple output formats including text, audio, and visual
 
 ## Publications
 
