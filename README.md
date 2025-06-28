@@ -41,8 +41,10 @@
 <p align="center">
   <img src="assets/ISL-Title.png" alt="Indian Sign Language Overview" width="800">
 </p>
+<p align="center">
+  A comprehensive sign language recognition and generation system built with Python, TensorFlow, and Streamlit.
+</p>
 
-A comprehensive sign language recognition and generation system built with Python, TensorFlow, and Streamlit.
 
 ## Features
 
